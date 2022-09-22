@@ -7,9 +7,9 @@
     "start": "node app.js",
     "dev": "nodemon app.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "create-r": "node ./db/reviewsTable/create.js",
-    "populate-r": "node ./db/reviewsTable/populate.js",
-    "delete-r": "node ./db/reviewsTable/delete.js"
+    "create-t": "node ./db/tweetsTable/create.js",
+    "populate-t": "node ./db/tweetsTable/populate.js",
+    "delete-t": "node ./db/tweetsTable/drop.js"
   },
   "type": "module",
   "repository": {
