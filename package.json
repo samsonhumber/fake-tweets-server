@@ -1,7 +1,7 @@
 {
   "name": "rate-a-toilet",
   "version": "1.0.0",
-  "description": "Backend for the toilet rater. It should provide the frontend with information about reviews on toilets, details on the toilets added so far, allow users to post reviews.",
+  "description": "Server for fake tweets",
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
