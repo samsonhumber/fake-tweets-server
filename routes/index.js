@@ -3,11 +3,19 @@ import { getAllTweets } from "../models/getTweets.js";
 import { postTweet } from "../models/postTweets.js";
 import { updateTweetTextById } from "../models/updateTweets.js";
 import { deleteTweetById } from "../models/deleteTweets.js";
+import { getTweetById } from "../models/getTweetById.js";
 
 const tweetsRouter = express.Router();
 
 tweetsRouter.get("/getTweets", async function (req, res) {
   const result = await getAllTweets();
+  const responseObject = { success: true, payload: result };
+  res.json(responseObject);
+});
+
+tweetsRouter.get("/getTweets/:id", async function (req, res) {
+  const id = req.params.id;
+  const result = await getTweetById(id);
   const responseObject = { success: true, payload: result };
   res.json(responseObject);
 });

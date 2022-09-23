@@ -3,7 +3,7 @@ import cors from "cors";
 import { tweetsRouter } from './routes/index.js'
 
 const app = express();
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 3000;
 app.use(cors());
 
 app.use(express.static("public"));
