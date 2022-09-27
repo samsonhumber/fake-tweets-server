@@ -1,6 +1,12 @@
 # fake-tweets-server
 
-## A backend for the fake tweets social media app
+## A backend for the [fake tweets](https://github.com/hamstercat007/fake-tweets) social media app
+
+### 
+
+27/09/2022:
+- Prototype server deployed at [fake-tweets-server.onrender.com](https://fake-tweets-server.onrender.com)
+- This url will hopefully require a special key to use if this ever gets serious or abused
 
 22/09/2022:  
 - A postgreSQL database on ElephantSQL has been created
